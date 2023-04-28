@@ -12,12 +12,20 @@ body {
 }
 
 a{
-  z-index: 99999;
+  z-index: 999;
+  pointer-events: all;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
-h1 {
-  font-size: 8vw;
-  color: #F8FFE5;
+a:hover{
+  opacity: .6;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+h1, h2 {
+  font-size: 6vw;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
   margin: 0;
@@ -27,7 +35,7 @@ h4{
   color: #F28F3B;
   font-weight: 400;
   margin: 0;
-  font-size: 6vw;
+  font-size: 4vw;
   animation: fadeIn 1s linear 1s 1 backwards;
 }
 @keyframes fadeIn {
@@ -44,10 +52,18 @@ span {
   color: #FFF;
 }
 
+.elliot h1{
+    color: #F8FFE5;
+}
+
 .webdev{
   color: #212738;
   font-weight: 800;
   z-index: 99;
+}
+
+.webdev h2{
+  color: #212738;
 }
 
 .webdev h4{
@@ -61,8 +77,10 @@ span {
   font-size: 10px;
   width: 100%;
   text-align: left;
-  opacity: .5;
+  opacity: .4;
   z-index: -1;
+  left: 10px;
+  font-weight: 100;
 }
 
 .marketing{
@@ -70,9 +88,26 @@ span {
   font-weight: 800;
 }
 
+.marketing h2{
+  color: #F8FFE5;
+}
+
+.marketing h4{
+  color: #212738;
+}
+
+.consulting h2{
+  color: #212738;
+}
+
+.consulting h4{
+  color: #7C9EB2;
+}
 
 
 
+
+/** SLIDES **/
 .emSlideshow {
   position: absolute;
   z-index: 1;
